@@ -91,7 +91,7 @@ const contacts = [
 
 function lookUpProfile(name, prop) {
     // Only change code below this line
-
+console.log('hello');
     // Only change code above this line
 }
 

@@ -1,0 +1,65 @@
+<!--Вложение элемента привязки в абзац-->
+<!--Вы можете вкладывать ссылки в другие текстовые элементы.-->
+
+<!--<p>-->
+<!--    Here's a <a target="_blank" href="https://www.freecodecamp.org"> link to www.freecodecamp.org</a> for you to follow.-->
+<!--</p>-->
+<!--Давайте разберем пример. Обычный текст оборачивается в pэлемент:-->
+
+<!--<p> Here's a ... for you to follow. </p>-->
+<!--Далее идет элемент привязки<a> (который требует закрывающего тега </a>):-->
+
+<!--<a> ... </a>-->
+<!--targetэто атрибут тега привязки, который указывает, где открыть ссылку. Значение _blankуказывает, чтобы открыть ссылку в новой вкладке. Это hrefатрибут тега привязки, который содержит URL-адрес ссылки:-->
+
+<!--<a href="https://www.freecodecamp.org" target="_blank"> ... </a>-->
+<!--Текст link to www.freecodecamp.orgвнутри aэлемента называется якорным текстом и отображает ссылку, по которой нужно щелкнуть:-->
+
+<!--<a href=" ... " target="...">link to freecodecamp.org</a>-->
+<!--Окончательный вывод примера будет выглядеть так:-->
+
+<!--Вот ссылка на www.freecodecamp.org , по которой вы можете перейти.-->
+
+<!--Вложите существующий aэлемент в новый pэлемент. Не создавайте новый тег привязки. В новом абзаце должен быть текст с надписью View more cat photos, где cat photosссылка, а остальное — обычный текст.-->
+
+<!--У вас должен быть только один aэлемент.-->
+
+<!--Элемент aдолжен ссылаться на " https://www.freecatphotoapp.com".-->
+
+<!--Ваш aэлемент должен иметь якорный текстcat photos-->
+
+<!--Вы должны создать новый pэлемент. Всего pв HTML-коде должно быть не менее 3 тегов.-->
+
+<!--Ваш aэлемент должен быть вложен в ваш новый pэлемент.-->
+
+<!--Ваш pэлемент должен иметь текст View more (с пробелом после него).-->
+
+<!--Ваш aэлемент не должен иметь текст View more.-->
+
+<!--Каждый из ваших pэлементов должен иметь закрывающий тег.-->
+
+<!--Каждый из ваших aэлементов должен иметь закрывающий тег.-->
+
+<!--===-->
+<!--<h2>CatPhotoApp</h2>-->
+<!--<main>-->
+
+<!--    <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>-->
+
+<!--    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">-->
+
+<!--    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>-->
+<!--    <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>-->
+<!--</main>-->
+
+<!--===-->
+
+<h2>CatPhotoApp</h2>
+<main>
+
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+
+    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+    <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+    <p>View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a></p>
+</main>

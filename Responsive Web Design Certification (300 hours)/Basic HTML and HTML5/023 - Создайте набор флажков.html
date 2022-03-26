@@ -1,0 +1,83 @@
+<!--Создайте набор флажков-->
+<!--Формы обычно используют флажки для вопросов, которые могут иметь более одного ответа.-->
+
+<!--Флажки представляют собой разновидность input.-->
+
+<!--Каждый из ваших флажков может быть вложен в свой собственный labelэлемент. Обернув inputэлемент внутри labelэлемента, он автоматически свяжет ввод флажка с окружающим его элементом метки.-->
+
+<!--Все связанные поля флажка должны иметь один и тот же nameатрибут.-->
+
+<!--Лучшей практикой считается явное определение отношения между флажком inputи соответствующим labelему путем установки forатрибута labelэлемента в соответствии с idатрибутом связанного inputэлемента.-->
+
+<!--Вот пример флажка:-->
+
+<!--<label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>-->
+<!--Добавьте в форму набор из трех флажков. Каждый флажок должен быть вложен в свой собственный labelэлемент. Все три должны иметь общий nameатрибут personality.-->
+
+<!--На вашей странице должно быть три флажка.-->
+
+<!--Каждый из трех ваших элементов флажка должен быть вложен в свой собственный labelэлемент.-->
+
+<!--Убедитесь, что каждый из ваших labelэлементов имеет закрывающий тег.-->
+
+<!--Вашим флажкам должен быть присвоен nameатрибут personality.-->
+
+<!--Каждый из ваших флажков должен быть добавлен в formтег.-->
+
+<!--===-->
+<!--<h2>CatPhotoApp</h2>-->
+<!--<main>-->
+<!--    <p>Click here to view more <a href="#">cat photos</a>.</p>-->
+
+<!--    <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>-->
+
+<!--    <p>Things cats love:</p>-->
+<!--    <ul>-->
+<!--        <li>cat nip</li>-->
+<!--        <li>laser pointers</li>-->
+<!--        <li>lasagna</li>-->
+<!--    </ul>-->
+<!--    <p>Top 3 things cats hate:</p>-->
+<!--    <ol>-->
+<!--        <li>flea treatment</li>-->
+<!--        <li>thunder</li>-->
+<!--        <li>other cats</li>-->
+<!--    </ol>-->
+<!--    <form action="https://www.freecatphotoapp.com/submit-cat-photo">-->
+<!--        <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>-->
+<!--        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>-->
+<!--        <input type="text" placeholder="cat photo URL" required>-->
+<!--        <button type="submit">Submit</button>-->
+<!--    </form>-->
+<!--</main>-->
+<!--===-->
+
+<h2>CatPhotoApp</h2>
+<main>
+    <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+    <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+    <p>Things cats love:</p>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ol>
+    <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+        <label><input type="checkbox" name="personality"></label>
+        <label><input type="checkbox" name="personality"></label>
+        <label><input type="checkbox" name="personality"></label>
+
+        <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+        <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+    </form>
+</main>

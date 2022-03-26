@@ -1,0 +1,63 @@
+<!--Ссылка на внутренние разделы страницы с якорными элементами-->
+<!--a( якорь ) также можно использовать для создания внутренних ссылок для перехода к различным разделам веб-страницы.-->
+
+<!--Чтобы создать внутреннюю ссылку, вы назначаете hrefатрибут ссылки символу #решетки плюс значение idатрибута для элемента, на который вы хотите сделать внутреннюю ссылку, обычно дальше по странице. Затем вам нужно добавить тот же idатрибут к элементу, на который вы ссылаетесь. Атрибут id, однозначно описывающий элемент.-->
+
+<!--Ниже приведен пример внутренней анкорной ссылки и ее целевого элемента:-->
+
+<!--<a href="#contacts-header">Contacts</a>-->
+<!--...-->
+<!--<h2 id="contacts-header">Contacts</h2>-->
+<!--Когда пользователи нажимают на Contactsссылку, они переходят в раздел веб-страницы с заголовком « Контакты ».-->
+
+<!--Измените внешнюю ссылку на внутреннюю, изменив hrefатрибут на #footerи текст с cat photosна Jump to Bottom.-->
+
+<!--Удалите target="_blank"атрибут из тега привязки, так как это приводит к открытию связанного документа в новой вкладке окна.-->
+
+<!--Затем добавьте idатрибут со значением footerк <footer>элементу внизу страницы.-->
+
+<!--    На вашей странице должен быть только один тег привязки.-->
+
+<!--    footerНа вашей странице должен быть только один тег.-->
+
+<!--    Тег aдолжен иметь hrefатрибут, установленный на «#footer».-->
+
+<!--    Тег aне должен иметь targetатрибута.-->
+
+<!--    Текст aдолжен быть «Перейти к низу».-->
+
+<!--    Тег footerдолжен иметь idатрибут, установленный на «нижний колонтитул».-->
+
+<!--===-->
+<!--<h2>CatPhotoApp</h2>-->
+<!--<main>-->
+
+<!--    <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>-->
+
+<!--    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">-->
+
+<!--    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>-->
+<!--    <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>-->
+<!--    <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>-->
+<!--    <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>-->
+
+<!--</main>-->
+
+<!--<footer>Copyright Cat Photo App</footer>-->
+<!--===-->
+
+<h2>CatPhotoApp</h2>
+<main>
+
+    <a href="#footer">Jump to Bottom</a>
+
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+
+    <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+    <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+    <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+    <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+</main>
+
+<footer id="footer">Copyright Cat Photo App</footer>

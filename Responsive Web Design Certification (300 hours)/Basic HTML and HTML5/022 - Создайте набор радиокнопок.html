@@ -1,0 +1,94 @@
+<!--Создайте набор радиокнопок-->
+<!--Вы можете использовать переключатели для вопросов, на которые вы хотите, чтобы пользователь дал вам только один ответ из нескольких вариантов.-->
+
+<!--Радиокнопки являются разновидностью input.-->
+
+<!--Каждая из ваших радиокнопок может быть вложена в свой собственный labelэлемент. Обернув inputэлемент внутри labelэлемента, он автоматически свяжет ввод радиокнопки с окружающим его элементом метки.-->
+
+<!--Все связанные переключатели должны иметь одинаковый nameатрибут для создания группы переключателей. При создании группы переключателей выбор любого отдельного переключателя автоматически отменяет выбор других кнопок в той же группе, гарантируя, что пользователь предоставит только один ответ.-->
+
+<!--Вот пример переключателя:-->
+
+<!--<label>-->
+<!--    <input type="radio" name="indoor-outdoor">Indoor-->
+<!--</label>-->
+<!--Рекомендуется устанавливать forатрибут labelэлемента со значением, которое соответствует значению idатрибута inputэлемента. Это позволяет вспомогательным технологиям создавать связанные отношения между меткой и соответствующим inputэлементом. Например:-->
+
+<!--<input id="indoor" type="radio" name="indoor-outdoor">-->
+<!--<label for="indoor">Indoor</label>-->
+<!--Мы также можем вложить inputэлемент в labelтеги:-->
+
+<!--<label for="indoor">-->
+<!--    <input id="indoor" type="radio" name="indoor-outdoor">Indoor-->
+<!--</label>-->
+<!--Добавьте в форму пару переключателей, каждый из которых вложен в отдельный labelэлемент. У одного должен быть вариант, indoorа у другого должен быть вариант outdoor. Оба должны иметь общий nameатрибут indoor-outdoorдля создания радиогруппы.-->
+
+<!--На вашей странице должно быть два radioэлемента-кнопки.-->
+
+<!--Вашим переключателям должен быть присвоен nameатрибут indoor-outdoor.-->
+
+<!--Каждый из двух ваших переключателей должен быть вложен в свой собственный labelэлемент.-->
+
+<!--Каждый из ваших labelэлементов должен иметь закрывающий тег.-->
+
+<!--Одна из ваших радиокнопок должна иметь метку indoor.-->
+
+<!--Одна из ваших радиокнопок должна иметь метку outdoor.-->
+
+<!--Каждый из ваших элементов радиокнопки должен быть добавлен в formтег.-->
+
+<!--===-->
+<!--<h2>CatPhotoApp</h2>-->
+<!--<main>-->
+<!--    <p>Click here to view more <a href="#">cat photos</a>.</p>-->
+
+<!--    <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>-->
+
+<!--    <p>Things cats love:</p>-->
+<!--    <ul>-->
+<!--        <li>cat nip</li>-->
+<!--        <li>laser pointers</li>-->
+<!--        <li>lasagna</li>-->
+<!--    </ul>-->
+<!--    <p>Top 3 things cats hate:</p>-->
+<!--    <ol>-->
+<!--        <li>flea treatment</li>-->
+<!--        <li>thunder</li>-->
+<!--        <li>other cats</li>-->
+<!--    </ol>-->
+<!--    <form action="https://www.freecatphotoapp.com/submit-cat-photo">-->
+<!--        <input type="text" placeholder="cat photo URL" required>-->
+<!--        <button type="submit">Submit</button>-->
+<!--    </form>-->
+<!--</main>-->
+<!--===-->
+
+<h2>CatPhotoApp</h2>
+<main>
+    <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+    <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+    <p>Things cats love:</p>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ol>
+    <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+        <label for="indoor">
+            <input id="indoor" type="radio" name="indoor-outdoor">Indoor
+        </label>
+        <label for="outdoor">
+            <input id="outdoor" type="radio" name="indoor-outdoor">outdoor
+        </label>
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+    </form>
+</main>
